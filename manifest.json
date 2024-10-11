@@ -3,6 +3,9 @@
     "name": "Bandcamp Minimized Buy Section",
     "version": "1.0",
     "description": "Minimize by default the buy section for a bandcamp album (so you'll see the tracklist first, yay \\o/)",
+    "icons": {
+        "48": "logo.png"
+    },
     "permissions": [
         "storage",
         "webRequest",
