@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "Bandcamp Minimized Buy Section",
+    "version": "1.0",
+    "description": "Minimize by default the buy section for a bandcamp album (so you'll see the tracklist first, yay \\o/)",
+    "permissions": [
+        "storage",
+        "webRequest",
+        "webRequestBlocking"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.bandcamp.com/*"
+            ],
+            "js": [
+                "minimizebuysection.js"
+            ]
+        }
+    ]
+}
